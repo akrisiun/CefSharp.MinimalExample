@@ -9,4 +9,14 @@ namespace CefSharp.MinimalExample.Wpf
             InitializeComponent();
         }
     }
+
+    public interface IWeb : IWebBrowser
+    {}
+
+    public interface IBr : IBrowser
+    {}
+
+    //public class BrBrowser : IBr
+    //{ 
+    //}
 }
