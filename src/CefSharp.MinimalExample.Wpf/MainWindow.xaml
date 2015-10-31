@@ -4,34 +4,15 @@
         xmlns:main="clr-namespace:CefSharp.MinimalExample.Wpf.Views"
         Title="{Binding WebBrowser.Title}"
         WindowState="Maximized">
-    <Window.Resources>
-        <Style x:Key="marg" TargetType="Button">
-            <Setter Property="Margin" Value="5 3 5 0" />
-            <Setter Property="Padding" Value="5 0 5 0" />
-        </Style>
-
-    </Window.Resources>
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="24" />
-            <RowDefinition />
-        </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal">
-            <Button x:Name="btnBack" x:FieldModifier="public"
-                    Style="{StaticResource marg}"
-                >_Back</Button>
-            <ComboBox x:Name="url" x:FieldModifier="public"
-                      MinWidth="200" Margin="5 5 5 0" 
-                      Padding="5 0 5 0"
-                      />
-            <Button x:Name="btnGo" x:FieldModifier="public"
-                Style="{StaticResource marg}"
-                >_Go</Button>
-            <Button Style="{StaticResource marg}"
-                    >_Stop</Button>
-            <Button Style="{StaticResource marg}"
-                    >_Full scr.</Button>
-        </StackPanel>
-        <main:MainView Grid.Row="1" />
-    </Grid>
+    <main:TabsContainer x:Name="tabControl">
+        <main:TabPage Header="Google">
+            <main:BrowseTab />
+        </main:TabPage>
+        <main:TabPage Header="Github">
+            <main:BrowseTab />
+        </main:TabPage>
+        <main:TabPage Header="Youtube">
+            <main:BrowseTab />
+        </main:TabPage>
+    </main:TabsContainer>
 </Window>
