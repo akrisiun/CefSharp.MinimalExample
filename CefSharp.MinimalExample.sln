@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CefSharp.MinimalExample.Wpf", "CefSharp.MinimalExample.Wpf\CefSharp.MinimalExample.Wpf.csproj", "{BE4C3AD0-8DA2-4246-8C63-EEEB7DC197BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CefSharp.MinimalExample.Wpf", "src\CefSharp.MinimalExample.Wpf\CefSharp.MinimalExample.Wpf.csproj", "{BE4C3AD0-8DA2-4246-8C63-EEEB7DC197BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CefSharp.MinimalExample.OffScreen", "CefSharp.MinimalExample.OffScreen\CefSharp.MinimalExample.OffScreen.csproj", "{A4DEB90C-A529-4A93-ACE3-226A39EFCB00}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CefSharp.MinimalExample.OffScreen", "src\CefSharp.MinimalExample.OffScreen\CefSharp.MinimalExample.OffScreen.csproj", "{A4DEB90C-A529-4A93-ACE3-226A39EFCB00}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B096D5B3-12A3-4E9A-8266-B6E38ACB2F39}"
 	ProjectSection(SolutionItems) = preProject
