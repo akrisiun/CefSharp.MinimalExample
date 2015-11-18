@@ -1,4 +1,4 @@
 .nuget\NuGet.exe restore
 
-call msbuild CefSharp.MinimalExample.sln
+call msbuild CefSharp.MinimalTabs.sln
 @PAUSE
