@@ -15,11 +15,13 @@ namespace CefSharp.MinimalExample.Wpf.ViewModels
         // public event PropertyChangedEventHandler PropertyChanged;
         public IObserver<IWpfWebBrowser> Observer { get; set; }
 
-        public void OnNext(IWpfWebBrowser value) {
+        public void OnNext(IWpfWebBrowser value)
+        {
             if (value == null)
                 return;
-            Header = value.Title; Update(); 
+            Header = value.Title; Update();
         }
+
         public void OnError(Exception error) { }
         public void OnCompleted() { }
         public void Dispose() { }
@@ -51,15 +53,10 @@ namespace CefSharp.MinimalExample.Wpf.ViewModels
             }
 
             var title = BrowseModel.Title;
-            // Content.url.
             if (title != null)
             {
                 Header = title;
                 Content.url.Text = Browser.Address;
-
-                //HeaderedContentControl ctrl = null; // (HeaderedContentControl)Page.Header;
-                //if (ctrl != null)
-                //    ctrl.Content = title;
 
                 var check = Page.Header;
                 if (check is string)

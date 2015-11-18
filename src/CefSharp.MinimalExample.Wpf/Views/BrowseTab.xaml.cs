@@ -22,6 +22,16 @@ namespace CefSharp.MinimalExample.Wpf.Views
         public BrowseTab()
         {
             InitializeComponent();
+
+            //browser.KeyDown += browser_KeyDown;
         }
+
+        //void browser_KeyDown(object sender, KeyEventArgs e)
+        //{
+        //    if (e.Key == Key.S)
+        //    {
+        //        e.Handled = true;
+        //    }
+        //}
     }
 }

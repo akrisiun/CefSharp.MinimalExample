@@ -26,7 +26,7 @@
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
             <Button x:Name="btnBack" x:FieldModifier="public"
                     Style="{StaticResource marg}"
-                >_Back</Button>
+                >Back</Button>
         </StackPanel>
         <ComboBox x:Name="url" x:FieldModifier="public" 
                   Grid.Column="1"
@@ -38,13 +38,13 @@
         <StackPanel Orientation="Horizontal" Grid.Column="2">
             <Button x:Name="btnGo" x:FieldModifier="public"
                 Style="{StaticResource marg}"
-                >_Go</Button>
+                >Go</Button>
             <Button x:Name="btnStop" x:FieldModifier="public"
                 Style="{StaticResource marg}"
-                >_Stop</Button>
+                >Stop</Button>
             <Button x:Name="btnFullScr" x:FieldModifier="public"
                 Style="{StaticResource marg}"
-                >_Full scr.</Button>
+                >Full scr.</Button>
         </StackPanel>
 
         <main:MainView x:Name="browser" x:FieldModifier="public"
